@@ -1,0 +1,161 @@
+/* Estilo general del modal */
+.modal-content {
+    width: 300px; /* Ajusta el tamaño según tus necesidades */
+    height: 300px; /* Ajusta el tamaño según tus necesidades */
+    margin: auto; /* Centra el modal horizontalmente */
+    position: absolute; /* Posiciona el modal en el centro de la pantalla */
+    top: 50%; /* 50% desde la parte superior */
+    left: 50%; /* 50% desde la parte izquierda */
+    transform: translate(-50%, -50%); /* Ajusta la posición para que esté centrado */
+    border-radius: 15px; /* Bordes redondeados */
+    background: white; /* Fondo blanco para el modal */
+    padding: 20px; /* Espaciado interno */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil para dar efecto flotante */
+    overflow-y: auto; /* Añade scroll si el contenido es más grande que el modal */
+   
+  }
+  
+  /* Estilo del botón de cierre */
+  .modal-close-button {
+    position: absolute; /* Posiciona el botón en la esquina superior derecha */
+    top: 10px; /* Ajusta la posición desde la parte superior */
+    right: 10px; /* Ajusta la posición desde la parte derecha */
+    width: 20px; /* Tamaño del botón */
+    height: 20px; /* Tamaño del botón */
+    border-radius: 50%; /* Bordes redondeados */
+    background-color: #ff4d4d; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Elimina el borde */
+    font-size: 14px; /* Tamaño del texto */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Estilo del botón de cierre cuando se pasa el ratón */
+  .modal-close-button:hover {
+    background-color: #ff1a1a; /* Color de fondo en hover */
+  }
+
+  .modalImg{
+    width: 150px;
+    
+
+  }
+
+  .modal-contentPassword {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-contentPassword {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.contentPassword {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007BFF;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilo para la superposición (fondo oscuro) detrás del modal */
+.modal-overaly {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con 70% de opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Estilo para el contenedor principal del modal */
+.modal-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  z-index: 1001;
+}
+
+/* Estilo para el formulario dentro del modal */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Estilo para el input de texto */
+input[type="text"] {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Estilo para el botón */
+button {
+  background-color: #007BFF;
+  color: #ffffff;
+  padding: 12px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Cambia el color de fondo del botón cuando se pasa el cursor por encima */
+button:hover {
+  background-color: #0056b3;
+}
+
